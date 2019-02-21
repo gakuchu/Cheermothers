@@ -1,0 +1,73 @@
+.form_box {
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* 必須マーク */
+.must{
+  color: #22eaaa;
+  margin-right: 10px;
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: 1px solid #22eaaa;
+}
+
+/* 項目名を太字にする */
+form p {
+  font-weight: 600;
+}
+
+/* 入力項目を見やすくする */
+input.wpcf7-form-control.wpcf7-text,
+textarea.wpcf7-form-control.wpcf7-textarea {
+  width: 100%;
+  padding: 8px 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid #d0d5d8;
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+  height: 200px;
+}
+
+/* 必須項目の入力欄を黄色にする */
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+  /*   background: rgba(255, 255, 142, 0.46); */
+}
+
+/* 送信ボタンを見やすくする */
+input.wpcf7-submit {
+  margin-left: 50%;
+  transform: translatex(-50%);
+  width: 200px;
+  height: 60px;
+  background: #22eaaa;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  border-color: transparent;
+}
+input.wpcf7-submit:hover {
+  background: #17ad7d;
+  cursor: pointer;
+}
+
+/* エラーメッセージを見やすくする */
+span.wpcf7-not-valid-tip,
+.wpcf7-response-output.wpcf7-validation-errors {
+  color: #e80000;
+}
+.wpcf7-response-output.wpcf7-validation-errors  {
+  border: 2px solid #e80000;
+  border-radius: 3px;
+}
+
+/* okメッセージ */
+.wpcf7-response-output.wpcf7-mail-sent-ok {
+  border: 2px solid #22eaaa;
+  border-radius: 3px;
+}

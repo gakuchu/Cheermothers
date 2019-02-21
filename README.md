@@ -1,2 +1,3 @@
-# 0206_cherrmother
-ちんちんじゃないお
+# Cherrmother
+
+A simple theme for wordpress.

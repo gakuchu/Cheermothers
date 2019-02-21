@@ -1,0 +1,417 @@
+@media screen and (max-width:960px){
+  /*****************/
+  /*Initialize*/
+  /*****************/
+  
+  .sp {
+    display: inline-block;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  }
+  main {
+    overflow: hidden;
+  }
+  
+/*  mainを下げてheaderを黒くするやつ*/
+  header {
+    margin-top: -80px;
+  }
+  main {
+    margin-top: 80px;
+  }
+  
+  /*****************/
+  /*Header*/
+  /*****************/
+  
+  header {
+    position: fixed;
+  }
+  .menu ul li a.current {
+    border-bottom: transparent;
+  }
+  
+  /*メニュー部分*/
+  nav.menu{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    left: 0;
+  }
+  header nav.menu ul{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 80px;
+  }
+  header nav.menu ul li{
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+  }
+  header nav.menu ul li:last-child{
+    border: none;
+  }
+  header nav.menu ul li a{
+    display: block; 
+  }
+  header nav.menu .sns {
+    right: 0;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+  }
+  header nav.menu .sns a {
+    margin: 0 10px;
+  }
+  .logo {
+    left: 15px;
+  }
+
+  /*開閉ボタン*/
+  #nav_toggle{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    z-index: 100;
+  }
+  #nav_toggle div {
+    position: relative;
+    margin-top: 5px;
+  }
+  #nav_toggle span{
+    display: block;
+    height: 2px;
+    background: #fff;
+    position:absolute;
+    width: 100%;
+    left: 0;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;	
+  }
+  #nav_toggle span:nth-child(1){
+    top:0px;
+  }
+  #nav_toggle span:nth-child(2){
+    top:12px;
+  }
+  #nav_toggle span:nth-child(3){
+    top:24px;
+  }
+
+  /*開閉ボタンopen時*/
+  .open #nav_toggle span:nth-child(1) {
+    top: 12px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  .open #nav_toggle span:nth-child(2) {
+    width: 0;
+    left: 50%;
+  }
+  .open #nav_toggle span:nth-child(3) {
+    top: 12px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .scroll-prevent {
+    /*動き固定*/
+    position: fixed;
+    /*奥行きを管理*/
+    z-index: -1;
+    /*下2つで背景を元のサイズのまま表示することができる*/
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  /*****************/
+  /*Main*/
+  /*****************/
+  
+  .home main h2 {
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 10px;
+  }
+  
+  /*hero*/
+  .hero {
+    height: 60vh;
+  }
+  .hero p {
+    font-size: 30px;
+    left: 53%;
+  }
+  
+  /*comapny, catalog*/
+  .home .block {
+    height: 200px;
+  }
+  .home .block .block_img {
+    display: none;
+  }
+  .home .block .block_detail {
+    width: 100%;
+    padding: 100px 10%;
+  }
+  .home .block .block_detail h2 {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    text-align: center;
+  }
+  .home .block .block_detail p {
+    text-align: center;
+  }
+  
+  /*procutcs*/
+  .products {
+    padding: 50px 10% 0;
+  }
+  .center_head {
+    margin-bottom: 20px;
+  }
+  ul.product li {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  ul.product li .img {
+    height: 80px;
+  }
+  ul.product li p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .product a li .img::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /*news*/
+  .news {
+    padding: 20px 10% 0;
+  }
+  .news p {
+    width: 100%;
+  }
+  .news p .time {
+    display: block;
+    font-size: .6em;
+  }
+  
+  /*****************/
+  /*Footer*/
+  /*****************/
+  
+  .map {
+    height: 250px;
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .map .info,
+  .map .items {
+    display: none;
+  }
+  .map .sns {
+    height: 25px;
+    padding: 0;
+    width: 70px;
+    display: block;
+    bottom: 0;
+  }
+  .bar .sns {
+    display: none;
+  }
+  .bar {
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  
+  /*****************/
+  /*Page*/
+  /*****************/
+  
+  #news .hero,
+  #contact .hero {
+    height: 200px;
+  }
+  #news .hero p,
+  #contact .hero p {
+    top: 120px;
+  }
+  .page.body_glitch {
+    --glitch-height: 200px
+  }
+  .page .content__title {
+    font-size: 2.5em;
+    margin-block-start: 1em;
+  }
+  .block2_detail {
+    width: 80%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .block2_detail h3 {
+    font-size: 1em;
+  }
+  .block2_detail a,
+  .block2_detail p {
+    font-size: .8em;
+  }
+  .page .block2 h2 span{
+    border-bottom: 5px solid var(--darkgray);
+  }
+  
+  /*news*/
+  #news .post-news {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  #news .post-news .time {
+    display: block;
+    font-size: .7em;
+  }
+  
+  /*product*/
+  .product .block2_detail a {
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  .product .block2 .img {
+    width: 90%;
+    height: 60px;
+  }
+  
+  /*company*/
+  .company .greet .block_img {
+    display: block;
+    height: 500px;
+  }
+  .company .block > div {
+    width: 100%;
+    height: 100%;
+  }
+  .company .block .block_detail {
+    padding: 25px 10%;
+  }
+  .company .block .block_detail h2 {
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  .company .block .block_detail p {
+    font-size: .8em;
+    text-align: justify;
+  }
+  .company .block.greet .block_detail p:nth-last-child(-n+2) {
+    text-indent: 0;
+  }
+  .company .block2_detail p {
+    text-indent: 0;
+  }
+  .company .business .block2_detail p {
+    margin-left: 0em;
+  }
+  .company .block2_detail p span {
+    display: block;
+  }
+  .company .business .block2_detail p span {
+    display: none;
+  }
+  .company .maps {
+    height: 220px;
+  }
+  .company .gmap {
+    height: 100px;
+  }
+  
+  /*recruit*/
+  .recruit .block2_detail p {
+    padding-bottom: 0;
+    border-bottom: transparent;
+  }
+  .recruit .block2.about .block2_detail {
+    width: 90%;
+  }
+  .recruit .block2.about .block2_detail b {
+    margin-top: 1em;
+    margin-left: 1em;
+    text-indent: 0;
+    width: 90%;
+  }
+  .recruit .block2.about .block2_detail span {
+    text-indent: 0;
+  }
+  
+  /*contact*/
+  #contact .form_box {
+    width: 90%;
+    margin-left: 5%;
+  }
+  #contact .wpcf7 p {
+    margin-top: 20px;
+  }
+  #contact input.wpcf7-form-control.wpcf7-text,
+  #contact textarea.wpcf7-form-control.wpcf7-textarea {
+    width: 90%;
+  }
+  /* iOSでのデフォルトスタイルをリセット */
+  #contact input[type="submit"],
+  #contact input[type="button"] {
+    border-radius: 3px;
+    -webkit-box-sizing: content-box;
+    -webkit-appearance: button;
+    appearance: button;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  #contact input[type="submit"]::-webkit-search-decoration,
+  #contact input[type="button"]::-webkit-search-decoration {
+    display: none;
+  }
+  #contact input[type="submit"]::focus,
+  #contact input[type="button"]::focus {
+    outline-offset: -2px;
+  }
+  
+  /*****************/
+  /*single-news*/
+  /*****************/
+  
+  .single-news .post-news .entry-content {
+    margin-top: 20px;
+  }
+  .single-news .post-news h2 {
+    font-size: 1.2em;
+  }
+}
