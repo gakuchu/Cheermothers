@@ -2,7 +2,9 @@
 
 <main>
   <div class="hero">
+      <a href="">
     <div class="fuki"></div>
+    </a> 
   </div>
   <article class="service">
     <div class="block">
