@@ -1,0 +1,30 @@
+{
+  "path": {
+    "assetsDir": "./assets/"
+  },
+  "name": "cheermothers",
+  "version": "1.0.0",
+  "description": "A simple theme for wordpress.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gakuchu/Cheermothers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gakuchu/Cheermothers/issues"
+  },
+  "homepage": "https://github.com/gakuchu/Cheermothers#readme"
+}

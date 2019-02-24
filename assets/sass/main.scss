@@ -1,0 +1,22 @@
+//test
+
+//test2
+
+body {
+  background-color: #0f0;
+  border: 2px solid  #fff;
+  .block {
+    background-color: #00f;
+  }
+  .img {
+    background-color: #0f0;
+    div {
+      color: #000;
+    }
+    .img {
+      background-image: url(../img/chia.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
