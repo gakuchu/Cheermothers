@@ -12,7 +12,7 @@ add_action( 'wp_enqueue_scripts', 'add_files' );
 
 //デフォルトのcssを読み込む
 function default_enqueue_scripts() {
-//  wp_enqueue_style( 'default-style', get_stylesheet_uri() );
+//  wp_enqueue_style( 'needed-style', get_stylesheet_uri() . '/assets/css/style.css' );
   wp_enqueue_style( 'default-style', get_template_directory_uri() . '/assets/css/style.css' );
   wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/assets/css/custom.css' );
   wp_enqueue_style( 'mobile-style', get_template_directory_uri() . '/assets/css/mobile.css' );
