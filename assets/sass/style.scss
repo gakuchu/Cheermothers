@@ -1,0 +1,295 @@
+/*
+Theme Name: Cheer mothers
+Theme URL: http://bdogrep.tokyo
+Description: cheer mothers
+Author: bdogrep
+Version: 0.0.0
+Tags: Genious
+*/
+
+/*****************/
+/*Initialize*/
+/*****************/
+
+:root {
+--orange: #ff7831;
+--white: #fff;
+--gray: #ededed;
+--darkgray: #505050;
+--black: #000;
+
+--font1: 'Noto Serif JP', serif;
+--font2: 'Open Sans', sans-serif;
+
+--header_height: 60px;
+--block_width: 960px;
+--font_size_2: 2em;
+}
+body {
+background-color: var(--white);
+margin: 0;
+padding: 0;
+font-family: var(--font1);
+color: var(--black);
+}
+ul {
+margin-block-start: 0em;
+margin-block-end: 0em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 0px;
+-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
+}
+li {
+list-style: none;
+}
+a {
+color: #000;
+text-decoration: none;
+}
+a:hover {
+opacity: .5;
+}
+h2{
+font-size: 2em;
+}
+
+.sp {
+display: none;
+}
+.img {
+background-image: url(../img/hero.jpg);
+background-size: cover;
+background-position: center;
+}
+
+/*****************/
+/*Header*/
+/*****************/
+
+header {
+width: 100%;
+height: var(--header_height);
+position: absolute;
+z-index: 9999;
+}
+.logo, .menu {
+position: absolute;
+height: var(--header_height);
+}
+.logo {
+width: 300px;
+height: 100%;
+background-image: url(../img/logo.png);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+margin-left: 50px;
+}
+.menu {
+font-family: var(--font2);
+height: 100%;
+right: 0;
+top: 0;
+line-height: 60px;
+margin-right: 50px;
+  ul li {
+    display: inline-block;
+    a {
+      margin: 0 0 0 5px;
+      border-right:1px solid #000;
+      padding-right: 10px;
+      box-sizing: border-box;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+#nav_toggle{
+display: none;
+}
+
+
+
+/*****************/
+/*Main*/
+/*****************/
+main {
+color: var(--white);
+padding-top: var(--header_height);
+}
+
+/*hero*/
+.hero {
+width: 100%;
+height: 500px;
+background-image: url(../img/hero.jpg);
+background-size: cover;
+background-position: center;
+}
+.fuki {
+width: 250px;
+height: 200px;
+position: absolute;
+top: 100px;
+right: 50px;
+background-image: url(../img/fuki2.png);
+background-size:contain;
+background-position: center;
+background-repeat: no-repeat
+}
+
+/*article*/
+article {
+background-color: var(--white);
+color: var(--black);
+text-align: center;
+}
+@media screen and (min-width: 960px) {
+article.service {
+background-color: var(--gray);
+}
+article.blog {
+}
+}
+
+/*block*/
+.block {
+width: var(--block_width);
+display: inline-block;
+}
+.block_head {
+font-size: var(--font_size_2);
+font-family: var(--font2);
+color: var(--black);
+margin-top: 50px;
+}
+.block_detail {
+width: 100%;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.block_detail p{
+font-family: var(--font1);
+}
+
+
+/*****************/
+/*Footer*/
+/*****************/
+
+footer {
+width: 100%;
+background-color: var(--gray);
+font-family: var(--font2);
+font-weight: 300;
+}
+.map {
+width: 80%;
+margin-left: 10%;
+height: 250px;
+  div {
+    width: 250px;
+    height: 100%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    a h5 {
+      color: var(--black);
+      font-weight: 300;
+    }
+    p {
+      font-size: .8em;
+      color: var(--darkgray);
+    }
+    li {
+      margin-bottom: 10px;
+      a{
+        color: var(--orange);
+        font-weight: 300;
+      }
+    }
+  }
+}
+.bar {
+width: 80%;
+height: 100px;
+margin-left: 10%;
+line-height: 100px;
+  div {
+    float: left;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: absolute;
+  }
+}
+.company_info {
+height: 50px;
+margin-top: 25px;
+  h5 {
+    line-height: 30px;
+    margin: 0;
+    color: var(--orange);
+    font-weight: 300;
+  }
+  p {
+    line-height: 20px;
+    margin: 0;
+    font-size: .8em;
+    color: var(--darkgray);
+  }
+}
+
+/*****************/
+/*Single*/
+/*****************/
+
+/*hero*/
+.single {
+  .hero {
+    height: 200px;
+    background-image: none;
+    p {
+      top: 100px;
+      font-family: var(--font2);
+      span {
+        border-bottom: 5px solid var(--white);
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+/*post-news*/
+.post-news {
+width: 80%;
+margin: 0 auto;
+min-height: 300px;
+padding: 20px;
+border-radius: 5px;
+border: 1px solid var(--green);
+  h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .time {
+    color: #aaa;
+  }
+}
+
+/*****************/
+/*Page*/
+/*****************/
+
+
+
+
+
+
+
+
+
