@@ -2,17 +2,32 @@
 
 <main>
   <div class="hero">
-      <a href="">
-    <div class="fuki"></div>
-    </a> 
+    <a href=""><div class="fuki"></div></a>
+    <h1>
+      女性の力を社会に活かし、<br>
+      顧客満足の高い営業支援・保育事業を提供しています
+    </h1>
   </div>
   <article class="service">
     <div class="block">
       <div class="block_head">SERVICE</div>
       <div class="block_detail">
-        <a class="box img"></a>
-        <a class="box img"></a>
-        <a class="box img"></a>
+        <a class="box" href="service_1/">
+          <div class="box_detail">
+            <h3>アウトソーシング事業</h3>
+            <p>弊社は営業代行サービス「テレマザ」と、事務代行サービス「サポマザ」の2つを展開しています。</p>
+          </div>
+          <div class="img"></div>
+          <div class="readmore"></div>
+        </a>
+        <a class="box" href="service_2/">
+          <div class="box_detail">
+            <h3>保育事業</h3>
+            <p>子供たちの「やりたい」「学びたい」を尊重し、「敏感期」という考え方に基づいて保育に取り組みます。</p>
+          </div>
+          <div class="img"></div>
+          <div class="readmore"></div>
+        </a>
       </div>
     </div>
   </article>
@@ -38,7 +53,16 @@
             </div>
             <div class="blog_content">
               <time class="time"><?php echo get_the_date(); ?></time>
-              <h3><?php the_title(); ?></h3>
+              <h3>
+               <?php
+                if(mb_strlen($post->post_title, 'UTF-8')>25){
+                  $title= mb_substr($post->post_title, 0, 30, 'UTF-8');
+                  echo $title.'...';
+                }else{
+                  echo $post->post_title;
+                }
+                ?>
+              </h3>
               <?php the_excerpt(); ?><div class="read_more">続きを読む</div>
             </div>
           </div>

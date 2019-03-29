@@ -6,112 +6,83 @@ Template Name: Company
  
 <?php get_header(); ?>
  
-  <main class="company">
-    <div class="hero">
-      <div class="glitch">
-        <div class="glitch__img"></div>
-        <div class="glitch__img"></div>
-        <div class="glitch__img"></div>
-        <div class="glitch__img"></div>
-        <div class="glitch__img"></div>
-      </div>
-      <h2 class="content__title">会社案内</h2>
+<main class="company">
+  <div class="hero">
+    <div class="dark"></div>
+    <p><span>COMPANY</span></p>
+    <a href=""><div class="fuki"></div></a> 
+  </div>
+  <article class="greet">
+    <h2>ご挨拶</h2>
+    <div class="block">
+      <p>
+        チアーマザーズ株式会社のホームページをご覧頂きまして、誠にありがとうございます。
+      </p>
+      <p>
+        当社は、「チアーマザーズ」社名の通り、世の中の「お母さん」を応援する会社です。<br>
+        「子供がいても、自分の力で稼ぎたい」と思う女性を集め、女性が働き易いだけでなく、「自分の力で稼ぐ」ことができるよう、<br>
+        事業推進に最も大切な『人間としての品格』と『セールス・マーケティングのノウハウ』を叩き込み、<br>
+        若年女性企業家を創出いたします。</p>
+      <p>
+        私自身、2人の小さな子供がおり、妊娠と出産を機に仕事を辞めざる負えなくなる状況になり、<br>
+        現在の社会の仕組みに疑問を感じておりました。<br>
+        働きたいのに、預ける先がない。預けようにも認可外の保育施設は高過ぎる・・・。</p>
+      <p>
+        それであれば、自分自身で「保育園」を創ってしまえばいいのではないか？<br>
+        と思いついたのがきっかけで、親会社の支援もあり、現在に至ります。</p>
+      <p>
+        私自身が、成果報酬型営業代行のアズ株式会社の立ち上げ時期から約8年間関わり、<br>
+        コールセンター責任者として500社以上の法人営業を行う企業様をご支援して参りました。<br>
+        テレマーケター時代は、日時平均アポイント7件、1日最高21件のアポイント獲得の実績がございます。<br>
+        そういった経験と、お母さん＝女性と「営業」が相性がよいこともあり、<br>
+        「成果報酬型営業代行事業」をメイン事業として、法人営業を行う企業様のご支援を行っております。
+      </p>
+      <p>
+        女性ならではの良い部分を活かし、お客様の「成果創出」にコミットし、<br>
+        売上拡大の貢献に全力を尽くす所存でございます。
+      </p>
+      <p>
+        チアーマザーズ株式会社<br>
+        代表取締役　上田　美来
+      </p>
     </div>
-    <article class="block about">
-      <div class="block_img img_about"></div>
-      <div class="block_detail">
-        <h2>「石の道具屋」太陽研磨材</h2>
-        <p>時代とともに素材は、石材から建材・金属・ガラス・セラミック・コンクリートといった広がりを見せています。</p>
-        <p>弊社では、そのような変化にも柔軟で迅速な対応を心がけております。人と地球にやさしい製品を作り、お客様の満足、そして地域社会への貢献に取り組んでいます。これまで培ってきた技術と知恵の結集で、お客様の様々なニーズに対応する研磨・切削工具、施工用資材をご提供させていただきます。</p>
-      </div>
-    </article>
-    <article class="block greet">
-      <div class="block_img img_greet"></div>
-      <div class="block_detail">
-        <h2>ごあいさつ</h2>
-        <p>石材の加工にはかかせない“水”の都大垣を拠点に、石材の切断・研磨加工のお手伝いをさせていただき始めて40年、お客様とともに事業を育んでまいりました。</p>
-        <p>素材の美しさや強さを最大限に生かすお役立ちをモットーに、私どもの取り組みは石材以外の素材の研磨・切断へ、ご提供の商品は素材の加工だけではなく施工用資材へ、そして弊社販売拠点は東京・名古屋・大阪・富山へと広がりを見せています。スタッフ一同総力をあげて、皆様のご要望にお応えできますよう努力してまいります。</p>
-        <br>
-        <p>太陽研磨材株式会社　代表取締役社長</p>
-        <p>吉野 博</p>
-      </div>
-    </article>
-    <article class="block2 about">
-      <h2><span>会社概要</span></h2>
-      <div class="block2_detail">
-        <p><span>商号</span>太陽研磨株式会社</p>
-        <p><span>創業</span>昭和47年3月1日</p>
-        <p><span>設立</span>昭和48年3月1日</p>
-        <p><span>資本金</span>1,000万円</p>
-        <p><span>代表者</span>代表取締役社長　吉野 博</p>
-        <p><span>年商</span>10億4千万円（平成19年5月期）</p>
-        <p><span>営業所</span>東京・大阪・富山</p>
-        <p><span>出張所</span>名古屋</p>
-        <p><span>関連会社</span>有限会社吉野砥石</p>
-        <p><span>取引銀行</span>十六銀行赤坂支店・大垣共立銀行赤坂支店・大垣信用金庫本店</p>
-        <p><span>加入団体</span>全国建築石材工業会・社団法人大垣法人会</p>
-      </div>
-    </article>
-    <article class="block2 business">
-      <h2><span>事業内容</span></h2>
-      <div class="block2_detail">
-        <p><span><i class="fas fa-sun"></i></span>各種研磨材料販売</p>
-        <p><span><i class="fas fa-sun"></i></span>各種石材用品販売</p>
-        <p><span><i class="fas fa-sun"></i></span>各種加工機械設計製作、販売、修理</p>
-      </div>
-    </article>
-    <article class="block2 location">
-      <h2><span>所在地</span></h2>
-      <div class="block2_detail">
-        <div class="maps_grep">
-          <div class="maps">
-            <h3>本社 名古屋出張所</h3>
-            <div class="gmap">
-              <iframe src="https://snazzymaps.com/embed/133447" width="100%" height="100%" style="border:none;"></iframe>
-            </div>
-            <p>TEL（0584）75-5153<br>FAX（0584）81-1609</p>
-          </div>
-          <div class="maps">
-            <h3>東京営業所</h3>
-            <div class="gmap">
-              <iframe src="https://snazzymaps.com/embed/133456" width="100%" height="100%" style="border:none;"></iframe>
-            </div>
-            <p>TEL（03）3776-5091<br>FAX（03）3776-5092</p>
-          </div>
-        </div>
-        <div class="maps_grep">
-          <div class="maps">
-            <h3>大阪営業所</h3>
-            <div class="gmap">
-              <iframe src="https://snazzymaps.com/embed/133461" width="100%" height="100%" style="border:none;"></iframe>
-            </div>
-            <p>TEL（06）6725-6251<br>FAX（06）6725-6109</p>
-          </div>
-          <div class="maps">
-            <h3>富山営業所</h3>
-            <div class="gmap">
-              <iframe src="https://snazzymaps.com/embed/133463" width="100%" height="100%" style="border:none;"></iframe>
-            </div>
-            <p>TEL（076）444-7767<br>FAX（076）444-7701</p>
-          </div>
-        </div>
-      </div>
-    </article>
-    <article class="block2 history">
-      <h2><span>歩み</span></h2>
-      <div class="block2_detail">
-        <p><span>昭和48年3月</span>資本金100万円にて太陽研磨材株式会社設立</p>
-        <p><span>昭和48年12月</span>資本金200万円に増資</p>
-        <p><span>昭和53年7月</span>関連会社　有限会社吉野砥石を設立</p>
-        <p><span>昭和54年11月</span>東大阪市上小坂に大阪営業所を開設</p>
-        <p><span>昭和56年7月</span>資本金800万円に増資</p>
-        <p><span>昭和58年11月</span>富山市上赤江町に富山営業所を開設</p>
-        <p><span>平成3年7月</span>本社を増改築</p>
-        <p><span>平成6年7月</span>愛知県西春日井郡春日町に名古屋出張所を開設</p>
-        <p><span>平成6年8月</span>資本金1,000万円に増資</p>
-        <p><span>平成12年8月</span>東京都大田区大森北に東京営業所を開設</p>
-      </div>
-    </article>
-  </main>
+  </article>
+  <article class="about">
+    <h2>会社概要</h2>
+    <div class="block">
+      <p>
+        <b>会社名</b>
+        <span>チアーマザーズ株式会社</span>
+      </p>
+      <p>
+        <b>代表者</b>
+        <span>代表取締役　上田　美来（現姓　鈴木　美来）</span>
+      </p>
+      <p>
+        <b>所在地</b>
+        <span>
+          〒111-0053<br>
+          東京都台東区浅草橋3－33－5　ホーユービル2階<br>
+          TEL	03-6362-4429<br>
+          FAX	03-6740-1610
+        </span>
+      </p>
+      <p>
+        <b>事業内容</b>
+        <span>
+          営業代行事業<br>
+          コールセンター業務<br>
+          事務業務代行<br>
+          認可外保育施設「にこにこキッズ保育園」運営<br>
+          認可外保育施設「わくわくキッズ保育園」運営
+        </span>
+      </p>
+      <p>
+        <b>従業員数</b>
+        <span>18名（2018年10月現在）</span>
+      </p>
+    </div>
+  </article>
+</main>
   
 <?php get_footer(); ?> 

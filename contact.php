@@ -8,7 +8,9 @@ Template Name: Contact
  
 <main id="contact">
   <div class="hero">
-    <p><span>お問い合わせ</span></p>
+    <div class="dark"></div>
+    <p><span>CONTACT</span></p>
+    <a href=""><div class="fuki"></div></a> 
   </div>
   <article class="form_box">
     <?php if (have_posts()):
