@@ -25,6 +25,7 @@
           <li><a href="<?php echo esc_url( home_url( '/service/' ) ); ?>"<?php if( is_page('service') ) echo ' class="current"'; ?>>SERVICE</a></li>
           <li><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>"<?php if( !is_front_page() && get_post_type() === 'blog' ) echo ' class="current"'; ?>>BLOG</a></li>
           <li><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>"<?php if( is_page('company') ) echo ' class="current"'; ?>>COMPANY</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/recruit/' ) ); ?>"<?php if( is_page('recruit') ) echo ' class="current"'; ?>>RECRUIT</a></li>
           <li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"<?php if( is_page('contact') ) echo ' class="current"'; ?>>CONTACT</a></li>
         </ul>
       </nav>

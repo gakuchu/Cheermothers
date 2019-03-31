@@ -177,7 +177,7 @@ background-position: center;
       }
     }
     .fuki {
-      top: 102px;
+      top: 72px;
     }
   }
 }
@@ -334,7 +334,7 @@ margin-top: 25px;
   }
 }
 
-.service_1 {
+.service_1, .service_2 {
   text-align: center;
   margin-bottom: 50px;
   article {
@@ -353,6 +353,51 @@ margin-top: 25px;
       p {
         margin-top: 1em;
         margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+.service_2 {
+  .about {
+    .block {
+      p {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        b {
+          display: block;
+          border-right: 2px solid #bcbcbc;
+          margin-right: 30px;
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+  .price {
+    .block {
+      p {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 1px solid #bcbcbc;
+        b {
+          display: block;
+          border: 1px solid #bcbcbc;
+          padding: 10px;
+        }
+        span {
+          display: block;
+        }
+      }
+      ul {
+        li {
+          text-indent: -1.3em;
+          margin-left: 1.3em;
+        }
       }
     }
   }
@@ -392,20 +437,42 @@ margin-top: 25px;
       }
     }
   }
-  .about {
+}
+
+/*****************/
+/*Recruit*/
+/*****************/
+
+.recruit {
+  text-align: center;
+  margin-bottom: 50px;
+  article {
+    width: 60%;
+    display: inline-block;
+    margin-top: 50px;
+    h2 {
+      font-family: var(--font2);
+      font-weight: 300;
+    }
     .block {
+      width: 100%;
+      border: 2px solid var(--orange);
+      text-align: left;
+      padding: 20px;
       p {
-        display: grid;
-        grid-template-columns: 130px 1fr;
-        b {
-          display: block;
-          border-right: 2px solid #bcbcbc;
-          margin-right: 30px;
-        }
-        span {
-          display: block;
-          
-        }
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+    }
+  }
+  .sum {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      border: 1px solid #bcbcbc;
+      b {
+        padding: 1em;
+        border: 1px solid #bcbcbc;
       }
     }
   }

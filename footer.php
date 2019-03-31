@@ -19,15 +19,15 @@
         <li><a href="<?php echo esc_url( home_url( '/service/' ) ); ?>">SERVICE</a></li>
         <li><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">BLOG</a></li>
         <li><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>">COMPANY</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/recruit/' ) ); ?>">RECRUIT</a></li>
         <li><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">CONTACT</a></li>
       </ul>
     </div>
     <div class="items">
       <h5>SERVICE</h5>
       <ul>
-        <li><a href="<?php echo esc_url( home_url( '/product/#pro1' ) ); ?>">営業代行サービス</a></li>
-        <li><a href="<?php echo esc_url( home_url( '/product/#pro2' ) ); ?>">BPOサービス</a></li>
-        <li><a href="<?php echo esc_url( home_url( '/product/#pro3' ) ); ?>">WEBマーケティング</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/service_1/' ) ); ?>">アウトソーシング事業</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/service_2/' ) ); ?>">保育事業</a></li>
       </ul>
     </div>
   </div>
