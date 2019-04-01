@@ -2,7 +2,7 @@
 
 <main>
   <div class="hero">
-    <a href=""><div class="fuki"></div></a>
+    <a href="tel:0363624429"><div class="fuki"></div></a>
     <div class="message">
       <h1>
         女性の力を社会に活かし、<br>

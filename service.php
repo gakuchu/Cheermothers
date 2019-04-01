@@ -9,7 +9,7 @@ Template Name: Service
 <main class="service">
   <div class="hero">
     <div class="dark">SERVICE</div>
-    <a href=""><div class="fuki"></div></a> 
+    <a href="tel:0363624429"><div class="fuki"></div></a> 
   </div>
   <article class="links">
     <div class="block">

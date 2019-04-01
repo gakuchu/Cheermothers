@@ -3,7 +3,7 @@
 <main class="single_blog">
   <div class="hero">
     <div class="dark">BLOG</div>
-    <a href=""><div class="fuki"></div></a> 
+    <a href="tel:0363624429"><div class="fuki"></div></a> 
   </div>
   <?php while( have_posts() ) : the_post(); ?>    
     <article>

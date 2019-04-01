@@ -9,7 +9,7 @@ Template Name: Service_1
 <main class="service_1">
   <div class="hero">
     <div class="dark">アウトソーシング事業</div>
-    <a href=""><div class="fuki"></div></a> 
+    <a href="tel:0363624429"><div class="fuki"></div></a> 
   </div>
   <article class="greet">
     <h2>営業代行サービス「テレマザ」</h2>
@@ -19,7 +19,9 @@ Template Name: Service_1
         新規開拓の中で最も労力のかかる「初期アプローチ」を成果報酬型で代行します。<br>
         お母さんスタッフが、丁寧かつ質の高いアポイントを獲得します！
       </p>
-      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_1_1.png" />
+      <div>
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_1_1.jpeg" />
+      </div>
       <h3>■テレマザを使う4つのメリットとは？</h3>
       <ul>
         <li>アポイントの取得を外部に任せることで、コア業務に集中することができます！</li>
@@ -27,7 +29,9 @@ Template Name: Service_1
         <li>アポ獲得を依頼することで売上の伸びが大きくなり、成長速度が上がります！</li>
         <li>テレアポ業務による営業マンのストレスを解消し、モチベーションをアップさせます！</li>
       </ul>
-      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_1_2.png" />
+      <div>
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_1_2.jpeg" />
+      </div>
       <p>
         テレマザの上位サービスである、活動成果連動型セールスマン代行“ヒットマザーズ”や、営業の採用・育成をサポートする“ママコミット”もございます。<br>
         詳細はお問い合わせください！
@@ -42,7 +46,9 @@ Template Name: Service_1
         社内で日々、雑務として発生しやすい商品登録や数値収集・入力や手書き資料のデジタル化などを幅広くサポート。<br>
         お母さんスタッフが、丁寧かつ質の高い事務代行を実現します！
       </p>
-      <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_1_3.png" />
+      <div>
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_1_3.jpeg" />
+      </div>
       <h3>■テレマザを使う4つのメリットとは？</h3>
       <ul>
         <li>日常発生する雑務を外部に任せることで、コア業務に集中することができます！</li>

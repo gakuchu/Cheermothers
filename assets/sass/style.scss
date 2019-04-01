@@ -358,6 +358,13 @@ margin-top: 25px;
         margin-top: 1em;
         margin-bottom: 1em;
       }
+      div {
+        width: 100%;
+        overflow-x: scroll;
+        img {
+          width: minmax(200px 100%);
+        }
+      }
     }
   }
 }

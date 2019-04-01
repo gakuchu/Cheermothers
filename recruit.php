@@ -9,7 +9,7 @@ Template Name: recruit
 <main class="recruit">
   <div class="hero">
     <div class="dark">RECRUIT</div>
-    <a href=""><div class="fuki"></div></a> 
+    <a href="tel:0363624429"><div class="fuki"></div></a> 
   </div>
   <article class="about">
     <h2>子どもの近くで「働く」<br class="pc">託児所付きコールセンターコールスタッフ</h2>

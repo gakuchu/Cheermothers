@@ -9,7 +9,7 @@ Template Name: Service_2
 <main class="service_2">
   <div class="hero">
     <div class="dark">にこにこキッズ保育園</div>
-    <a href=""><div class="fuki"></div></a> 
+    <a href="tel:0363624429"><div class="fuki"></div></a> 
   </div>
   <article class="greet">
 

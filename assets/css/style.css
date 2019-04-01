@@ -308,6 +308,11 @@ footer {
       .service_1 article .block p, .service_2 article .block p {
         margin-top: 1em;
         margin-bottom: 1em; }
+      .service_1 article .block div, .service_2 article .block div {
+        width: 100%;
+        overflow-x: scroll; }
+        .service_1 article .block div img, .service_2 article .block div img {
+          width: minmax(200px 100%); }
 
 .service_2 .greet ul {
   padding-left: 1.5em; }

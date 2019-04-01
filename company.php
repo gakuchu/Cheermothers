@@ -9,7 +9,7 @@ Template Name: Company
 <main class="company">
   <div class="hero">
     <div class="dark">COMPANY</div>
-    <a href=""><div class="fuki"></div></a> 
+    <a href="tel:0363624429"><div class="fuki"></div></a> 
   </div>
   <article class="greet">
     <h2>ご挨拶</h2>

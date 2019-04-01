@@ -9,7 +9,7 @@ Template Name: Contact
 <main id="contact">
   <div class="hero">
     <div class="dark">CONTACT</div>
-    <a href=""><div class="fuki"></div></a> 
+    <a href="tel:0363624429"><div class="fuki"></div></a> 
   </div>
   <article class="form_box">
     <?php if (have_posts()):
