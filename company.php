@@ -8,8 +8,7 @@ Template Name: Company
  
 <main class="company">
   <div class="hero">
-    <div class="dark"></div>
-    <p><span>COMPANY</span></p>
+    <div class="dark">COMPANY</div>
     <a href=""><div class="fuki"></div></a> 
   </div>
   <article class="greet">

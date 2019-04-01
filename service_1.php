@@ -8,8 +8,7 @@ Template Name: Service_1
  
 <main class="service_1">
   <div class="hero">
-    <div class="dark"></div>
-    <p><span>アウトソーシング事業</span></p>
+    <div class="dark">アウトソーシング事業</div>
     <a href=""><div class="fuki"></div></a> 
   </div>
   <article class="greet">

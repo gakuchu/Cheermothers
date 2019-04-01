@@ -1,13 +1,12 @@
 <?php get_header(); ?>
 
-<main>
+<main class="single_blog">
   <div class="hero">
-    <div class="dark"></div>
-    <p><span>BLOG</span></p>
+    <div class="dark">BLOG</div>
     <a href=""><div class="fuki"></div></a> 
   </div>
   <?php while( have_posts() ) : the_post(); ?>    
-    <article class="post-news">
+    <article>
       <div class="bloginfo">
         <h2><?php the_title(); ?></h2>
         <div class="auther">
@@ -20,6 +19,12 @@
         <?php the_content(); ?>
       </div>
     </article>
+    <nav>
+      <?php
+        previous_post_link('%link', '前の記事 : %title');
+        next_post_link('%link', '次の記事 : %title');
+      ?>
+    </nav>
   <?php endwhile; ?>
 </main>
 

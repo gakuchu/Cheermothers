@@ -8,8 +8,7 @@ Template Name: Service_2
  
 <main class="service_2">
   <div class="hero">
-    <div class="dark"></div>
-    <p><span>にこにこキッズ保育園</span></p>
+    <div class="dark">にこにこキッズ保育園</div>
     <a href=""><div class="fuki"></div></a> 
   </div>
   <article class="greet">
@@ -33,7 +32,7 @@ Template Name: Service_2
   </article>
   <article class="about">
     <h2>施設概要</h2>
-    <div class="block">	
+    <div class="block">
       <p>
         <b>所在地</b>
         <span>〒111-0053<br>東京都台東区浅草橋3-33-5<br>ホーユービル1F</span>

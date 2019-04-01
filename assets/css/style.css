@@ -15,7 +15,7 @@ Tags: Genious
   --gray: #ededed;
   --darkgray: #505050;
   --black: #000;
-  --font1: 'Noto Serif JP', serif;
+  --font1: 'Open Sans', sans-serif;
   --font2: 'Open Sans', sans-serif;
   --header_height: 60px;
   --block_width: 960px;
@@ -58,6 +58,9 @@ p {
           margin-block-start: 0em;
   -webkit-margin-after: 0em;
           margin-block-end: 0em; }
+
+b {
+  font-weight: 300; }
 
 .sp {
   display: none; }
@@ -139,7 +142,12 @@ main {
     top: 430px;
     letter-spacing: 4px;
     line-height: 50px;
-    color: #444; }
+    color: #444;
+    text-shadow: 1px 1px 5px #fff; }
+
+@media screen and (max-width: 1100px) {
+  .hero h1 {
+    font-size: 25px; } }
 
 .page .hero, .single .hero, .archive .hero {
   height: 220px; }
@@ -148,17 +156,11 @@ main {
     height: 220px;
     background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
-    z-index: 0; }
-  .page .hero p, .single .hero p, .archive .hero p {
-    top: 100px;
+    z-index: 0;
     font-family: var(--font2);
     text-align: center;
-    padding-top: 60px;
-    letter-spacing: 5px; }
-    .page .hero p span, .single .hero p span, .archive .hero p span {
-      border-bottom: 5px solid var(--white);
-      padding-bottom: 10px;
-      font-size: 50px; }
+    font-size: 50px;
+    line-height: 220px; }
   .page .hero .fuki, .single .hero .fuki, .archive .hero .fuki {
     top: 72px; }
 
@@ -307,6 +309,11 @@ footer {
         margin-top: 1em;
         margin-bottom: 1em; }
 
+.service_2 .greet ul {
+  padding-left: 1.5em; }
+  .service_2 .greet ul li {
+    list-style-type: decimal; }
+
 .service_2 .about .block p {
   display: grid;
   grid-template-columns: 130px 1fr; }
@@ -359,6 +366,15 @@ footer {
   .company .greet .block p:last-child {
     text-align: right;
     margin-top: 50px; }
+  .company .about .block p {
+    display: grid;
+    grid-template-columns: 130px 1fr; }
+    .company .about .block p b {
+      display: block;
+      border-right: 2px solid #bcbcbc;
+      margin-right: 30px; }
+    .company .about .block p span {
+      display: block; }
 
 /*****************/
 /*Recruit*/
@@ -381,18 +397,27 @@ footer {
       .recruit article .block p {
         margin-top: 1em;
         margin-bottom: 1em; }
+  .recruit .about ul {
+    margin-left: 1.5em; }
+  .recruit .about li {
+    list-style-type: circle; }
   .recruit .sum .wrapper {
     display: grid;
     grid-template-columns: 200px 1fr;
     border: 1px solid #bcbcbc; }
     .recruit .sum .wrapper b {
       padding: 1em;
-      border: 1px solid #bcbcbc; }
+      border: 1px solid #bcbcbc;
+      font-weight: 300; }
+      .recruit .sum .wrapper b ul {
+        margin-left: 1.2em; }
+        .recruit .sum .wrapper b ul li {
+          list-style-type: decimal; }
 
 /*****************/
 /*Archive-Blog*/
 /*****************/
-.archive .post-news {
+.archive_blog article {
   width: 60%;
   margin: 0 auto;
   margin-top: 30px;
@@ -401,18 +426,29 @@ footer {
   border-radius: 1px;
   border: 2px solid var(--orange);
   text-align: left; }
-  .archive .post-news b {
+  .archive_blog article b {
     font-size: 20px; }
-  .archive .post-news .time {
+  .archive_blog article .time {
     display: block;
     color: #aaa; }
-  .archive .post-news p:nth-child(2) {
+  .archive_blog article p:nth-child(2) {
     margin-top: 10px; }
+
+.archive_blog .navigation {
+  margin-top: 40px; }
+  .archive_blog .navigation h2 {
+    display: none; }
+  .archive_blog .navigation .nav-links {
+    text-align: center; }
+    .archive_blog .navigation .nav-links a {
+      border: 2px solid #bcbcbc;
+      padding: 10px;
+      margin: 0 2px; }
 
 /*****************/
 /*Single-Blog*/
 /*****************/
-.single .post-news {
+.single_blog article {
   width: 60%;
   margin: 0 auto;
   min-height: 300px;
@@ -422,42 +458,55 @@ footer {
   border-radius: 5px;
   border: 1px solid var(--green);
   text-align: left; }
-  .single .post-news .bloginfo {
+  .single_blog article .bloginfo {
     border: 2px solid var(--orange);
     position: relative;
     padding: 20px 20px 25px;
     border-radius: 5px; }
-    .single .post-news .bloginfo h2 {
+    .single_blog article .bloginfo h2 {
       font-size: 37px;
       margin: 0; }
-    .single .post-news .bloginfo .auther {
+    .single_blog article .bloginfo .auther {
       height: 70px;
       position: relative;
       margin-top: 20px; }
-      .single .post-news .bloginfo .auther .auther_icon {
+      .single_blog article .bloginfo .auther .auther_icon {
         display: block;
         width: 80px;
         height: 80px;
         background-color: var(--gray);
         border-radius: 50%;
         box-shadow: 2px 2px 20px gray; }
-        .single .post-news .bloginfo .auther .auther_icon img.avatar {
+        .single_blog article .bloginfo .auther .auther_icon img.avatar {
           width: 70px;
           height: 70px;
           border-radius: 50%;
           margin-left: 5px;
           margin-top: 5px; }
-      .single .post-news .bloginfo .auther .auther_name {
+      .single_blog article .bloginfo .auther .auther_name {
         font-size: 20px;
         display: inline-block;
         position: absolute;
         left: 100px;
         top: 26px; }
-    .single .post-news .bloginfo .time {
+    .single_blog article .bloginfo .time {
       color: #aaa;
       display: block;
       position: absolute;
       right: 20px;
       bottom: 20px; }
-  .single .post-news .entry-content {
+  .single_blog article .entry-content {
     margin-top: 50px; }
+
+.single_blog nav {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  margin-bottom: 50px; }
+  .single_blog nav a {
+    border: 2px solid #bcbcbc;
+    padding: 10px; }
+    .single_blog nav a:hover {
+      border-color: var(--orange); }

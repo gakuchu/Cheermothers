@@ -38,19 +38,13 @@
 /*blog*/
 .home .blog .block .block_detail {
   width: 100%;
-  margin-bottom: 20px;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .home .blog .block .block_detail a {
-    height: 100%;
-    flex-basis: 48%;
-    display: inline-flex;
-    background-color: #ff0;
-    margin-bottom: 20px; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 170px;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em; }
+  .home .blog .block .block_detail a:hover {
+    opacity: 1; }
   .home .blog .block .block_detail .box div {
     height: 170px;
     float: left; }
@@ -79,13 +73,15 @@
       color: dimgray; }
     .home .blog .block .block_detail .box .blog_content .read_more {
       position: absolute;
-      background-color: #ff0;
+      background-color: var(--orange);
       right: -5px;
-      bottom: -5px;
-      padding: 5px 10px;
-      display: none; }
-    .home .blog .block .block_detail .box .blog_content:hover .read_more {
-      display: block; }
+      display: none;
+      height: 100%;
+      width: 5px;
+      font-family: var(--font2);
+      top: 0; }
+  .home .blog .block .block_detail .box:hover .read_more {
+    display: block; }
   .home .blog .block .block_detail .blogzero {
     width: 100%;
     text-align: center; }

@@ -3,10 +3,12 @@
 <main>
   <div class="hero">
     <a href=""><div class="fuki"></div></a>
-    <h1>
-      女性の力を社会に活かし、<br>
-      顧客満足の高い営業支援・保育事業を提供しています
-    </h1>
+    <div class="message">
+      <h1>
+        女性の力を社会に活かし、<br>
+        顧客満足の高い営業支援・保育事業を提供しています。
+      </h1>
+    </div>
   </div>
   <article class="service">
     <div class="block">
@@ -56,20 +58,20 @@
               <h3>
                <?php
                 if(mb_strlen($post->post_title, 'UTF-8')>25){
-                  $title= mb_substr($post->post_title, 0, 30, 'UTF-8');
+                  $title= mb_substr($post->post_title, 0, 25, 'UTF-8');
                   echo $title.'...';
                 }else{
                   echo $post->post_title;
                 }
                 ?>
               </h3>
-              <?php the_excerpt(); ?><div class="read_more">続きを読む</div>
+              <?php the_excerpt(); ?><div class="read_more"></div>
             </div>
           </div>
         </a>
         <?php endforeach; ?>
         <?php else : ?>
-        <p class="blogzero">ブログがないよ</p>
+        <p class="blogzero">現在サイトのメンテナンス中です。</p>
         <?php endif;
         wp_reset_postdata(); //クエリのリセット ?>
       </div>

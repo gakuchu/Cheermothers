@@ -8,8 +8,7 @@ Template Name: Service
  
 <main class="service">
   <div class="hero">
-    <div class="dark"></div>
-    <p><span>SERVICE</span></p>
+    <div class="dark">SERVICE</div>
     <a href=""><div class="fuki"></div></a> 
   </div>
   <article class="links">

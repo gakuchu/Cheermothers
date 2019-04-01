@@ -8,8 +8,7 @@ Template Name: Contact
  
 <main id="contact">
   <div class="hero">
-    <div class="dark"></div>
-    <p><span>CONTACT</span></p>
+    <div class="dark">CONTACT</div>
     <a href=""><div class="fuki"></div></a> 
   </div>
   <article class="form_box">
