@@ -310,6 +310,16 @@
       .block {
         padding: 10px;
         box-sizing: border-box;
+        .circlegrid {
+          li {
+            width: 155px;
+            height: 155px;
+            p {
+              font-size: 12px;
+              top: 17%;
+            }
+          }
+        }
       }
     }
   }

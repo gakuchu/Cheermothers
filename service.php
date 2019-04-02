@@ -16,16 +16,16 @@ Template Name: Service
       <div class="block_detail">
         <a class="box" href="<?php echo esc_url( home_url( '/service_1/' ) ); ?>">
           <div class="box_detail">
-            <h3>アウトソーシング事業</h3>
-            <p>弊社は”営業代行”「テレマザ」 と、”受電、事務業務”「サポマザ」の２つでお客様をサポートします！</p>
+            <h3>営業代行サービス「テレマザ」</h3>
+            <p>新規開拓の中で最も労力のかかる「初期アプローチ」を成果報酬型で代行します。</p>
           </div>
           <div class="img"></div>
           <div class="readmore"></div>
         </a>
         <a class="box" href="<?php echo esc_url( home_url( '/service_2/' ) ); ?>">
           <div class="box_detail">
-            <h3>保育事業</h3>
-            <p>子供たちの「やりたい」「学びたい」を尊重し、「敏感期」という考え方に基づいて保育に取り組みます。</p>
+            <h3>事務代行サービス「サポマザ」</h3>
+            <p>雑務として発生しやすい商品登録や数値収集・入力や手書き資料のデジタル化などを幅広くサポート。</p>
           </div>
           <div class="img"></div>
           <div class="readmore"></div>

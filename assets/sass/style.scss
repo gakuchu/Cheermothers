@@ -338,7 +338,7 @@ margin-top: 25px;
   }
 }
 
-.service_1, .service_2 {
+.service_1, .service_2, .hoiku {
   text-align: center;
   margin-bottom: 50px;
   article {
@@ -362,14 +362,42 @@ margin-top: 25px;
         width: 100%;
         overflow-x: scroll;
         img {
-          width: minmax(200px 100%);
+          min-width: 400px;
+          width: 100%;
+        }
+      }
+      .circlegrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          position: relative;
+          width: 190px;
+          height: 190px;
+          counter-increment: count;
+          transform: translate(0,0);
+          text-align: center;
+          border-radius: 100%;
+          margin: 0 10px 15px;
+          background-color: #fff;
+          box-shadow: 0 0 15px 1px rgba(0,0,0,.11);
+          p {
+            padding: 0 20px;
+            top: 20%;
+            position: relative;
+            font-size: 15px;
+          }
         }
       }
     }
   }
 }
 
-.service_2 {
+/*****************/
+/*Hoiku*/
+/*****************/
+
+.hoiku {
   .greet {
     ul {
       padding-left: 1.5em;

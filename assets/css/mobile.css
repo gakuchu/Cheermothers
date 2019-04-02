@@ -206,6 +206,12 @@
     .service_1 article .block, .service_2 article .block {
       padding: 10px;
       box-sizing: border-box; }
+      .service_1 article .block .circlegrid li, .service_2 article .block .circlegrid li {
+        width: 155px;
+        height: 155px; }
+        .service_1 article .block .circlegrid li p, .service_2 article .block .circlegrid li p {
+          font-size: 12px;
+          top: 17%; }
   .service_2 .about .block p {
     grid-template-columns: 110px 1fr; }
     .service_2 .about .block p b {

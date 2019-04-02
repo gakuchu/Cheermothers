@@ -290,60 +290,85 @@ footer {
         .service .links .block .block_detail a.box:hover .readmore::before {
           left: 0; }
 
-.service_1, .service_2 {
+.service_1, .service_2, .hoiku {
   text-align: center;
   margin-bottom: 50px; }
-  .service_1 article, .service_2 article {
+  .service_1 article, .service_2 article, .hoiku article {
     width: 60%;
     display: inline-block;
     margin-top: 50px; }
-    .service_1 article h2, .service_2 article h2 {
+    .service_1 article h2, .service_2 article h2, .hoiku article h2 {
       font-family: var(--font2);
       font-weight: 300; }
-    .service_1 article .block, .service_2 article .block {
+    .service_1 article .block, .service_2 article .block, .hoiku article .block {
       width: 100%;
       border: 2px solid var(--orange);
       text-align: left;
       padding: 20px; }
-      .service_1 article .block p, .service_2 article .block p {
+      .service_1 article .block p, .service_2 article .block p, .hoiku article .block p {
         margin-top: 1em;
         margin-bottom: 1em; }
-      .service_1 article .block div, .service_2 article .block div {
+      .service_1 article .block div, .service_2 article .block div, .hoiku article .block div {
         width: 100%;
         overflow-x: scroll; }
-        .service_1 article .block div img, .service_2 article .block div img {
-          width: minmax(200px 100%); }
+        .service_1 article .block div img, .service_2 article .block div img, .hoiku article .block div img {
+          min-width: 400px;
+          width: 100%; }
+      .service_1 article .block .circlegrid, .service_2 article .block .circlegrid, .hoiku article .block .circlegrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .service_1 article .block .circlegrid li, .service_2 article .block .circlegrid li, .hoiku article .block .circlegrid li {
+          position: relative;
+          width: 190px;
+          height: 190px;
+          counter-increment: count;
+          -webkit-transform: translate(0, 0);
+                  transform: translate(0, 0);
+          text-align: center;
+          border-radius: 100%;
+          margin: 0 10px 15px;
+          background-color: #fff;
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.11); }
+          .service_1 article .block .circlegrid li p, .service_2 article .block .circlegrid li p, .hoiku article .block .circlegrid li p {
+            padding: 0 20px;
+            top: 20%;
+            position: relative;
+            font-size: 15px; }
 
-.service_2 .greet ul {
+/*****************/
+/*Hoiku*/
+/*****************/
+.hoiku .greet ul {
   padding-left: 1.5em; }
-  .service_2 .greet ul li {
+  .hoiku .greet ul li {
     list-style-type: decimal; }
 
-.service_2 .about .block p {
+.hoiku .about .block p {
   display: grid;
   grid-template-columns: 130px 1fr; }
-  .service_2 .about .block p b {
+  .hoiku .about .block p b {
     display: block;
     border-right: 2px solid #bcbcbc;
     margin-right: 30px; }
-  .service_2 .about .block p span {
+  .hoiku .about .block p span {
     display: block; }
 
-.service_2 .price .block p {
+.hoiku .price .block p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr;
   margin-top: 0;
   margin-bottom: 0;
   border: 1px solid #bcbcbc; }
-  .service_2 .price .block p b {
+  .hoiku .price .block p b {
     display: block;
     border: 1px solid #bcbcbc;
     padding: 10px; }
-  .service_2 .price .block p span {
+  .hoiku .price .block p span {
     display: block; }
 
-.service_2 .price .block ul li {
+.hoiku .price .block ul li {
   text-indent: -1.3em;
   margin-left: 1.3em; }
 
