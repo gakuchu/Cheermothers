@@ -6,7 +6,7 @@ Template Name: Contact
  
 <?php get_header(); ?>
  
-<main id="contact">
+<main class="contact">
   <div class="hero">
     <div class="dark">CONTACT</div>
     <a href="tel:0363624429"><div class="fuki"></div></a> 

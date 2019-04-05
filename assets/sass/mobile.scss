@@ -247,7 +247,7 @@
   
   footer {
     .map {
-      height: 260px;
+      height: 300px;
       position: relative;
       width: 90%;
       margin-left: 5%;
@@ -298,8 +298,8 @@
     }
   }
   
-//  Service_1, Service_2
-  .service_1, .service_2 {
+//  Service_1, Service_2, Hoiku
+  .service_1, .service_2, .hoiku {
     .hero {
       .dark {
         font-size: 30px;
@@ -354,6 +354,13 @@
     }
   }
   
+//  Hoiku
+  .hoiku {
+    article {
+      margin-top: 30px;
+    }
+  }
+  
 //  Archive-Blog
   .archive_blog {
     article {
@@ -385,16 +392,7 @@
       .block {
         padding: 10px;
         box-sizing: border-box;
-      }
-    }
-    .about {
-      .block {
-        p {
-          grid-template-columns: 100px 1fr;
-          b {
-            margin-right: 10px;
-          }
-        }
+        margin-top: 20px;
       }
     }
   }
@@ -415,21 +413,15 @@
     }
   }
   
-  /*contact*/
-  #contact .form_box {
-    width: 90%;
-    margin-left: 5%;
-  }
-  #contact .wpcf7 p {
-    margin-top: 20px;
-  }
-  #contact input.wpcf7-form-control.wpcf7-text,
-  #contact textarea.wpcf7-form-control.wpcf7-textarea {
-    width: 90%;
+//  Contact
+  .contact {
+    .form_box {
+      width: 90%;
+    }
   }
   /* iOSでのデフォルトスタイルをリセット */
-  #contact input[type="submit"],
-  #contact input[type="button"] {
+  .contact input[type="submit"],
+  .contact input[type="button"] {
     border-radius: 3px;
     -webkit-box-sizing: content-box;
     -webkit-appearance: button;
@@ -438,19 +430,27 @@
     box-sizing: border-box;
     cursor: pointer;
   }
-  #contact input[type="submit"]::-webkit-search-decoration,
-  #contact input[type="button"]::-webkit-search-decoration {
+  .contact input[type="submit"]::-webkit-search-decoration,
+  .contact input[type="button"]::-webkit-search-decoration {
     display: none;
   }
-  #contact input[type="submit"]::focus,
-  #contact input[type="button"]::focus {
+  .contact input[type="submit"]::focus,
+  .contact input[type="button"]::focus {
     outline-offset: -2px;
   }
   
   /*****************/
-  /*Single-Blog*/
+  /*ContactLink*/
   /*****************/
   
-  
+  article.contactlink {
+    .link {
+      width: 250px;
+      font-size: 22px;
+      a {
+        padding: 10px;
+      }
+    }
+  }
   
 }

@@ -17,8 +17,9 @@ Tags: Genious
   --black: #000;
   --font1: 'Open Sans', sans-serif;
   --font2: 'Open Sans', sans-serif;
+  --font3: 'Noto Serif JP', serif;
   --header_height: 60px;
-  --block_width: 960px;
+  --block_width: 900px;
   --font_size_2: 2em; }
 
 body {
@@ -64,11 +65,6 @@ b {
 
 .sp {
   display: none; }
-
-.img {
-  background-image: url(../img/hero.jpg);
-  background-size: cover;
-  background-position: center; }
 
 /*****************/
 /*Header*/
@@ -143,7 +139,8 @@ main {
     letter-spacing: 4px;
     line-height: 50px;
     color: #444;
-    text-shadow: 1px 1px 5px #fff; }
+    text-shadow: 1px 1px 5px #bcbcbc;
+    font-family: var(--font3); }
 
 @media screen and (max-width: 1100px) {
   .hero h1 {
@@ -177,7 +174,8 @@ article {
 /*block*/
 .block {
   width: var(--block_width);
-  display: inline-block; }
+  display: inline-block;
+  box-sizing: border-box; }
 
 .block_head {
   font-size: var(--font_size_2);
@@ -205,13 +203,15 @@ footer {
 .map {
   width: 80%;
   margin-left: 10%;
-  height: 250px; }
+  height: 300px; }
   .map div {
     width: 250px;
     height: 100%;
     float: left;
     padding: 20px;
     box-sizing: border-box; }
+    .map div.items {
+      width: 270px; }
     .map div a h5 {
       color: var(--black);
       font-weight: 300; }
@@ -294,7 +294,7 @@ footer {
   text-align: center;
   margin-bottom: 50px; }
   .service_1 article, .service_2 article, .hoiku article {
-    width: 60%;
+    width: var(--block_width);
     display: inline-block;
     margin-top: 50px; }
     .service_1 article h2, .service_2 article h2, .hoiku article h2 {
@@ -304,7 +304,8 @@ footer {
       width: 100%;
       border: 2px solid var(--orange);
       text-align: left;
-      padding: 20px; }
+      padding: 20px;
+      box-sizing: border-box; }
       .service_1 article .block p, .service_2 article .block p, .hoiku article .block p {
         margin-top: 1em;
         margin-bottom: 1em; }
@@ -339,38 +340,43 @@ footer {
 /*****************/
 /*Hoiku*/
 /*****************/
-.hoiku .greet ul {
-  padding-left: 1.5em; }
-  .hoiku .greet ul li {
-    list-style-type: decimal; }
+.hoiku article .block table {
+  border-collapse: collapse;
+  width: 100%; }
+  .hoiku article .block table tr:nth-child(odd) {
+    background-color: #f3f4f5; }
+  .hoiku article .block table tr td {
+    padding: 10px;
+    border: 1px solid #bcbcbc; }
+    .hoiku article .block table tr td:nth-child(1) {
+      width: 7em; }
 
-.hoiku .about .block p {
-  display: grid;
-  grid-template-columns: 130px 1fr; }
-  .hoiku .about .block p b {
-    display: block;
-    border-right: 2px solid #bcbcbc;
-    margin-right: 30px; }
-  .hoiku .about .block p span {
-    display: block; }
-
-.hoiku .price .block p {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr 1fr;
-  margin-top: 0;
-  margin-bottom: 0;
-  border: 1px solid #bcbcbc; }
-  .hoiku .price .block p b {
-    display: block;
-    border: 1px solid #bcbcbc;
-    padding: 10px; }
-  .hoiku .price .block p span {
-    display: block; }
-
-.hoiku .price .block ul li {
-  text-indent: -1.3em;
-  margin-left: 1.3em; }
+.hoiku article .block ul {
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px; }
+  .hoiku article .block ul li {
+    list-style-type: disc; }
+  .hoiku article .block ul:last-of-type {
+    -webkit-margin-before: 0em;
+            margin-block-start: 0em;
+    -webkit-margin-after: 0em;
+            margin-block-end: 0em;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
+    -webkit-padding-start: 00px;
+            padding-inline-start: 00px; }
+    .hoiku article .block ul:last-of-type li {
+      list-style: none; }
 
 /*****************/
 /*Company*/
@@ -379,7 +385,7 @@ footer {
   text-align: center;
   margin-bottom: 50px; }
   .company article {
-    width: 60%;
+    width: var(--block_width);
     display: inline-block;
     margin-top: 50px; }
     .company article h2 {
@@ -393,18 +399,15 @@ footer {
       .company article .block p {
         margin-top: 1em;
         margin-bottom: 1em; }
-  .company .greet .block p:last-child {
-    text-align: right;
-    margin-top: 50px; }
-  .company .about .block p {
-    display: grid;
-    grid-template-columns: 130px 1fr; }
-    .company .about .block p b {
-      display: block;
-      border-right: 2px solid #bcbcbc;
-      margin-right: 30px; }
-    .company .about .block p span {
-      display: block; }
+      .company article .block .wp-block-table.is-style-stripes {
+        width: 100%; }
+        .company article .block .wp-block-table.is-style-stripes tr:nth-child(odd) {
+          background-color: #f3f4f5; }
+        .company article .block .wp-block-table.is-style-stripes tr td {
+          padding: 10px;
+          border: 1px solid #bcbcbc; }
+          .company article .block .wp-block-table.is-style-stripes tr td:nth-child(1) {
+            width: 5em; }
 
 /*****************/
 /*Recruit*/
@@ -413,7 +416,7 @@ footer {
   text-align: center;
   margin-bottom: 50px; }
   .recruit article {
-    width: 60%;
+    width: var(--block_width);
     display: inline-block;
     margin-top: 50px; }
     .recruit article h2 {
@@ -427,28 +430,23 @@ footer {
       .recruit article .block p {
         margin-top: 1em;
         margin-bottom: 1em; }
+      .recruit article .block table tr:nth-child(odd) {
+        background-color: #f3f4f5; }
+      .recruit article .block table tr td {
+        padding: 10px;
+        border: 1px solid #bcbcbc; }
+        .recruit article .block table tr td:nth-child(1) {
+          width: 5em; }
   .recruit .about ul {
     margin-left: 1.5em; }
   .recruit .about li {
     list-style-type: circle; }
-  .recruit .sum .wrapper {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    border: 1px solid #bcbcbc; }
-    .recruit .sum .wrapper b {
-      padding: 1em;
-      border: 1px solid #bcbcbc;
-      font-weight: 300; }
-      .recruit .sum .wrapper b ul {
-        margin-left: 1.2em; }
-        .recruit .sum .wrapper b ul li {
-          list-style-type: decimal; }
 
 /*****************/
 /*Archive-Blog*/
 /*****************/
 .archive_blog article {
-  width: 60%;
+  width: var(--block_width);
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -479,7 +477,7 @@ footer {
 /*Single-Blog*/
 /*****************/
 .single_blog article {
-  width: 60%;
+  width: var(--block_width);
   margin: 0 auto;
   min-height: 300px;
   margin-top: 50px;
@@ -540,3 +538,30 @@ footer {
     padding: 10px; }
     .single_blog nav a:hover {
       border-color: var(--orange); }
+
+/*****************/
+/*ContactLink*/
+/*****************/
+article.contactlink {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 30px 0; }
+  article.contactlink .link {
+    position: relative;
+    width: 300px;
+    background-color: var(--orange);
+    margin: 0 auto;
+    font-size: 25px;
+    border-radius: 3px; }
+    article.contactlink .link a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px 1px #a3a3a3;
+      transition: all .2s ease; }
+      article.contactlink .link a:hover {
+        opacity: 1;
+        box-shadow: 0 0 20px .5px #ddd; }

@@ -24,7 +24,7 @@ add_action( 'wp_enqueue_scripts', 'default_enqueue_scripts' );
 // アイキャッチを有効化
 add_theme_support( 'post-thumbnails' );
 
-//カスタム投稿タイプを登録
+//BLOG用カスタム投稿タイプを登録
 function new_post_type() {
   register_post_type(
     'blog',//投稿タイプ名（識別子）

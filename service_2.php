@@ -35,6 +35,7 @@ Template Name: Service_2
       </div>
     </div>
   </article>
+  <?php get_template_part('template-part/contact-link'); ?>
 </main>
   
 <?php get_footer(); ?> 

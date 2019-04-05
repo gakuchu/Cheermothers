@@ -1,25 +1,28 @@
-@charset "UTF-8";
 .form_box {
   width: 600px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .wpcf7-form {
   display: grid;
   grid-template-columns: 100%;
-  margin: 30px 0; }
-  .wpcf7-form p {
+  margin: 30px 0;
+  p {
     text-align: left;
     font-weight: 600;
-    padding: 10px; }
-    .wpcf7-form p label span input, .wpcf7-form p label span textarea {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 5px 10px;
-      font-size: 15px; }
-    .wpcf7-form p:last-of-type {
+    padding: 10px;
+    label span {
+      input, textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        font-size: 15px;
+      }
+    }
+    &:last-of-type {
       display: grid;
-      justify-content: center; }
-      .wpcf7-form p:last-of-type input.wpcf7-submit {
+      justify-content: center;
+      input.wpcf7-submit {
         width: 200px;
         height: 60px;
         background: var(--orange);
@@ -27,18 +30,24 @@
         font-size: 20px;
         font-weight: 600;
         border-radius: 4px;
-        border-color: transparent; }
+        border-color: transparent;
+      }
+    }
+  }
+}
 
 /* エラーメッセージを見やすくする */
 span.wpcf7-not-valid-tip,
 .wpcf7-response-output.wpcf7-validation-errors {
-  color: #e80000; }
-
-.wpcf7-response-output.wpcf7-validation-errors {
+  color: #e80000;
+}
+.wpcf7-response-output.wpcf7-validation-errors  {
   border: 2px solid #e80000;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
 /* okメッセージ */
 .wpcf7-response-output.wpcf7-mail-sent-ok {
   border: 2px solid #22eaaa;
-  border-radius: 3px; }
+  border-radius: 3px;
+}

@@ -1,0 +1,55 @@
+.img {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.service {
+    .block {
+      a:nth-child(1) .img {
+        background-image: url(../img/service_1.jpg);
+        background-position: center 17%;
+      }
+      a:nth-child(2) .img {
+        background-image: url(../img/service_2.jpg);
+      }
+    }
+}
+.service_1 {
+  .hero {
+    background-image: url(../img/service_1.jpg);
+    background-position: center 23%;
+  }
+}
+.service_2 {
+  .hero {
+    background-image: url(../img/service_2.jpg);
+  }
+}
+.hoiku {
+  .hero {
+    background-image: url(../img/hoiku.jpg);
+  }
+}
+.company {
+  .hero {
+    background-image: url(../img/company.jpg);
+  }
+}
+.recruit {
+  .hero {
+    background-image: url(../img/recruit.jpg);
+  }
+}
+.contact {
+  .hero {
+    background-image: url(../img/contact.jpg);
+    background-position: center 7%;
+  }
+}

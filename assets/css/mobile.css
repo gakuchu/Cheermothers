@@ -170,7 +170,7 @@
   /*Footer*/
   /*****************/
   footer .map {
-    height: 260px;
+    height: 300px;
     position: relative;
     width: 90%;
     margin-left: 5%; }
@@ -199,17 +199,17 @@
     justify-content: center; }
     .service .links .block .block_detail .box {
       box-shadow: 7px 7px 20px #eee; }
-  .service_1 .hero .dark, .service_2 .hero .dark {
+  .service_1 .hero .dark, .service_2 .hero .dark, .hoiku .hero .dark {
     font-size: 30px; }
-  .service_1 article, .service_2 article {
+  .service_1 article, .service_2 article, .hoiku article {
     width: 90vw; }
-    .service_1 article .block, .service_2 article .block {
+    .service_1 article .block, .service_2 article .block, .hoiku article .block {
       padding: 10px;
       box-sizing: border-box; }
-      .service_1 article .block .circlegrid li, .service_2 article .block .circlegrid li {
+      .service_1 article .block .circlegrid li, .service_2 article .block .circlegrid li, .hoiku article .block .circlegrid li {
         width: 155px;
         height: 155px; }
-        .service_1 article .block .circlegrid li p, .service_2 article .block .circlegrid li p {
+        .service_1 article .block .circlegrid li p, .service_2 article .block .circlegrid li p, .hoiku article .block .circlegrid li p {
           font-size: 12px;
           top: 17%; }
   .service_2 .about .block p {
@@ -221,6 +221,8 @@
     overflow-x: scroll; }
     .service_2 .price .block p b {
       padding: 5px; }
+  .hoiku article {
+    margin-top: 30px; }
   .archive_blog article {
     width: 90vw;
     padding: 10px;
@@ -237,11 +239,8 @@
     width: 90vw; }
     .company article .block {
       padding: 10px;
-      box-sizing: border-box; }
-  .company .about .block p {
-    grid-template-columns: 100px 1fr; }
-    .company .about .block p b {
-      margin-right: 10px; }
+      box-sizing: border-box;
+      margin-top: 20px; }
   .recruit article {
     width: 90vw; }
     .recruit article .block {
@@ -249,18 +248,11 @@
       box-sizing: border-box; }
   .recruit .sum .wrapper {
     grid-template-columns: 100px 1fr; }
-  /*contact*/
-  #contact .form_box {
-    width: 90%;
-    margin-left: 5%; }
-  #contact .wpcf7 p {
-    margin-top: 20px; }
-  #contact input.wpcf7-form-control.wpcf7-text,
-  #contact textarea.wpcf7-form-control.wpcf7-textarea {
+  .contact .form_box {
     width: 90%; }
   /* iOSでのデフォルトスタイルをリセット */
-  #contact input[type="submit"],
-  #contact input[type="button"] {
+  .contact input[type="submit"],
+  .contact input[type="button"] {
     border-radius: 3px;
     -webkit-box-sizing: content-box;
     -webkit-appearance: button;
@@ -269,12 +261,17 @@
     border: none;
     box-sizing: border-box;
     cursor: pointer; }
-  #contact input[type="submit"]::-webkit-search-decoration,
-  #contact input[type="button"]::-webkit-search-decoration {
+  .contact input[type="submit"]::-webkit-search-decoration,
+  .contact input[type="button"]::-webkit-search-decoration {
     display: none; }
-  #contact input[type="submit"]::focus,
-  #contact input[type="button"]::focus {
+  .contact input[type="submit"]::focus,
+  .contact input[type="button"]::focus {
     outline-offset: -2px; }
   /*****************/
-  /*Single-Blog*/
-  /*****************/ }
+  /*ContactLink*/
+  /*****************/
+  article.contactlink .link {
+    width: 250px;
+    font-size: 22px; }
+    article.contactlink .link a {
+      padding: 10px; } }

@@ -1,75 +1,36 @@
-/*index, glitch*/
-.img_catalog {
-  background-image: url(../img/IMG_9363.jpg);
-  background-position: bottom center;
-}
+.img {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center; }
 
-.glitch__img::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: ' ';
-}
-.img_company,
-.company .glitch__img {
-  background-image: url(../img/IMG_9389.jpg);
-}
-.company .glitch__img::before{
-  background-color: rgba(0,0,0,0.7);
-}
-.product .glitch__img {
-  background-image: url(../img/IMG_9411.jpg);
-  background-position: bottom 40% center;
-}
-.product .glitch__img::before{
-  background-color: rgba(0,0,0,0.5);
-}
-.recruit .glitch__img {
-  background-image: url(../img/IMG_9155.jpg);
-  background-position: bottom 5% center;
-}
-.recruit .glitch__img::before{
-  background-color: rgba(0,0,0,0.5);
-}
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center; }
 
-/*index, product*/
+.service .block a:nth-child(1) .img {
+  background-image: url(../img/service_1.jpg);
+  background-position: center 17%; }
 
-#pro1 .img,
-.product a:nth-child(1) li .img {
-  background-image: url(../img/IMG_9297.jpg);
-}
-#pro2 .img,
-.product a:nth-child(2) li .img {
-  background-image: url(../img/IMG_9407.jpg);
-}
-#pro3 .img,
-.product a:nth-child(3) li .img {
-  background-image: url(../img/IMG_9363.jpg);
-}
-#pro4 .img,
-.product a:nth-child(4) li .img {
-  background-image: url(../img/IMG_9363.jpg);
-}
-#pro5 .img,
-.product a:nth-child(5) li .img {
-  background-image: url(../img/IMG_9401.jpg);
-}
-#pro6 .img,
-.product a:nth-child(6) li .img {
-  background-image: url(../img/IMG_9366.jpg);
-}
-#pro7 .img,
-.product a:nth-child(7) li .img {
-  background-image: url(../img/IMG_9328.jpg);
-}
+.service .block a:nth-child(2) .img {
+  background-image: url(../img/service_2.jpg); }
 
-/*company*/
-.img_about {
-  background-image: url(../img/IMG_9313.jpg);
-}
-.img_greet {
-  background-image: url(../img/IMG_9436.jpg);
-  background-position: bottom center;
-}
+.service_1 .hero {
+  background-image: url(../img/service_1.jpg);
+  background-position: center 23%; }
+
+.service_2 .hero {
+  background-image: url(../img/service_2.jpg); }
+
+.hoiku .hero {
+  background-image: url(../img/hoiku.jpg); }
+
+.company .hero {
+  background-image: url(../img/company.jpg); }
+
+.recruit .hero {
+  background-image: url(../img/recruit.jpg); }
+
+.contact .hero {
+  background-image: url(../img/contact.jpg);
+  background-position: center 7%; }

@@ -27,8 +27,8 @@
     <div class="items">
       <h5>SERVICE</h5>
       <ul>
-        <li><a href="<?php echo esc_url( home_url( '/service_1/' ) ); ?>">アウトソーシング事業</a></li>
-        <li><a href="<?php echo esc_url( home_url( '/service_2/' ) ); ?>">保育事業</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/service_1/' ) ); ?>">営業代行サービス「テレマザ」</a></li>
+        <li><a href="<?php echo esc_url( home_url( '/service_2/' ) ); ?>">事務代行サービス「サポマザ」</a></li>
       </ul>
     </div>
   </div>
