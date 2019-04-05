@@ -53,6 +53,35 @@ function new_post_type() {
 }
 add_action('init', 'new_post_type');
 
+//RECRUIT用カスタム投稿タイプを登録
+function new_post_type_recruit() {
+  register_post_type(
+    'recruit',//投稿タイプ名（識別子）
+    array(
+      'label' => '採用情報',
+      'labels' => array(
+        'add_new_item' => '新規採用情報を追加',
+        'edit_item' => '採用情報',
+        'view_item' => '採用情報を表示',
+        'search_items' => '採用情報を検索',
+      ),
+      'public' => true,// 管理画面に表示しサイト上にも表示する
+      'hierarchicla' => false,//コンテンツを階層構造にするかどうか(投稿記事と同様に時系列に)
+      'has_archive' => false,//trueにすると投稿した記事のアーカイブページを生成
+      'supports' => array(//記事編集画面に表示する項目を配列で指定することができる
+        'title',//タイトル
+        'editor',//本文（の編集機能）
+        'thumbnail',//アイキャッチ画像
+        'custom-fields',
+        'excerpt'//抜粋
+      ),
+      'menu_position' => 6//「ブログ」の下に追加
+    )
+  );
+  flush_rewrite_rules();
+}
+add_action('init', 'new_post_type_recruit');
+
 //contact.phpにform.cssを読み込む
 function form_styles() {
   if (is_page(array('contact'))) {

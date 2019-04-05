@@ -412,34 +412,56 @@ footer {
 /*****************/
 /*Recruit*/
 /*****************/
-.recruit {
+.recruit article.contents .block .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em; }
+  .recruit article.contents .block .links a {
+    min-height: 300px;
+    border: 1px solid #bcbcbc; }
+    .recruit article.contents .block .links a .img {
+      width: 100%;
+      height: 150px; }
+    .recruit article.contents .block .links a .blog_content {
+      padding: 20px;
+      text-align: left; }
+
+.recruit article.form {
+  background-color: var(--gray);
+  margin: 50px 0;
+  padding: 20px; }
+
+/*****************/
+/*Single-Recruit*/
+/*****************/
+.single-recruit {
   text-align: center;
   margin-bottom: 50px; }
-  .recruit article {
+  .single-recruit article {
     width: var(--block_width);
     display: inline-block;
     margin-top: 50px; }
-    .recruit article h2 {
+    .single-recruit article h2 {
       font-family: var(--font2);
       font-weight: 300; }
-    .recruit article .block {
+    .single-recruit article .block {
       width: 100%;
       border: 2px solid var(--orange);
       text-align: left;
       padding: 20px; }
-      .recruit article .block p {
+      .single-recruit article .block p {
         margin-top: 1em;
         margin-bottom: 1em; }
-      .recruit article .block table tr:nth-child(odd) {
+      .single-recruit article .block table tr:nth-child(odd) {
         background-color: #f3f4f5; }
-      .recruit article .block table tr td {
+      .single-recruit article .block table tr td {
         padding: 10px;
         border: 1px solid #bcbcbc; }
-        .recruit article .block table tr td:nth-child(1) {
+        .single-recruit article .block table tr td:nth-child(1) {
           width: 5em; }
-  .recruit .about ul {
+  .single-recruit .about ul {
     margin-left: 1.5em; }
-  .recruit .about li {
+  .single-recruit .about li {
     list-style-type: circle; }
 
 /*****************/
