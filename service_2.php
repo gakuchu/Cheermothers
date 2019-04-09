@@ -14,7 +14,7 @@ Template Name: Service_2
   <article class="about">
     <h2>事務代行サービス「サポマザ」</h2>
     <div class="block">
-      <h3>■サポマザとは…</h3>
+      <h3>サポマザとは</h3>
       <p>
         社内で日々、雑務として発生しやすい商品登録や数値収集・入力や手書き資料のデジタル化などを幅広くサポート。<br>
         お母さんスタッフが、丁寧かつ質の高い事務代行を実現します！
@@ -22,13 +22,6 @@ Template Name: Service_2
       <div>
         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_2_1.jpeg" />
       </div>
-      <h3>■テレマザを使う4つのメリットとは？</h3>
-      <ul class="circlegrid">
-        <li><p>日常発生する雑務を外部に任せることで、コア業務に集中することができます！</p></li>
-        <li><p>人材採用費、人材教育費、その他コストの削減に繋がります！</p></li>
-        <li><p>コア業務へ人員や時間などの資源を集中させることで、社員の成長速度が上がります！</p></li>
-        <li><p>日々のルーチンによるストレスを解消し、モチベーションをアップさせます！</p></li>
-      </ul>
       <h3>料金</h3>
       <div>
         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_2_price.jpeg" />

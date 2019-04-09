@@ -14,7 +14,7 @@ Template Name: Service_1
   <article class="greet">
     <h2>営業代行サービス「テレマザ」</h2>
     <div class="block">
-      <h3>■テレマザとは…</h3>
+      <h3>テレマザとは</h3>
       <p>
         新規開拓の中で最も労力のかかる「初期アプローチ」を成果報酬型で代行します。<br>
         お母さんスタッフが、丁寧かつ質の高いアポイントを獲得します！
@@ -22,12 +22,12 @@ Template Name: Service_1
       <div>
         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_1_1.jpeg" />
       </div>
-      <h3>■テレマザを使う4つのメリットとは？</h3>
+      <h3>テレマザを使う4つのメリットとは？</h3>
       <ul class="circlegrid">
-        <li><p>アポイントの取得を外部に任せることで、コア業務に集中することができます！</p></li>
-        <li><p>人材採用費、人材教育費、その他コストの削減に繋がります！</p></li>
-        <li><p>アポ獲得を依頼することで売上の伸びが大きくなり、成長速度が上がります！</p></li>
-        <li><p>テレアポ業務による営業マンのストレスを解消し、モチベーションをアップさせます！</p></li>
+        <li><p>アポイント取得を任せ、コア業務に集中できます！</p></li>
+        <li><p>人材採用、教育等にかかるコストを削減できます！</p></li>
+        <li><p>アポ獲得を依頼することで会社の成長速度が上がります！</p></li>
+        <li><p>テレアポによるストレスを解消し、モチベーションアップ！</p></li>
       </ul>
       <div>
         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_1_2.jpeg" />
@@ -36,6 +36,33 @@ Template Name: Service_1
         テレマザの上位サービスである、活動成果連動型セールスマン代行“ヒットマザーズ”や、営業の採用・育成をサポートする“ママコミット”もございます。<br>
         詳細はお問い合わせください！
       </p>
+      <h3>サービスの流れ</h3>
+      <ul class="circlegrid flow">
+        <li>
+          <p>お問い合わせ<br><span>（まずはTELまたはお問い合わせフォームよりご連絡ください）</span></p>
+          <div class="allow"></div>
+        </li>
+        <li>
+          <p>担当者よりご連絡<br><span>（1～2営業日で担当者からご連絡差し上げます。）</span></p>
+          <div class="allow"></div>
+        </li>
+        <li>
+          <p>ヒアリング＆ご提案<br><span>（目標や条件等について、ヒアリングの上ご提案をさせて頂きます。）</span></p>
+          <div class="allow"></div>
+        </li>
+        <li>
+          <p>ご契約締結<br><span>（ご契約書の取り交わしをさせて頂きます。）</span></p>
+          <div class="allow"></div>
+        </li>
+        <li>
+          <p>稼働前MTG<br><span>（ターゲット、セールストークの内容についてすり合わせを行います。）</span></p>
+          <div class="allow"></div>
+        </li>
+        <li>
+          <p>コール開始<br><span>（最短で3営業日からコール開始が可能です。）</span></p>
+          <div class="allow"></div>
+        </li>
+      </ul>
       <h3>料金</h3>
       <div>
         <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/service_1_price.jpeg" />

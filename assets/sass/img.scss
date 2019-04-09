@@ -11,6 +11,10 @@
 }
 
 .service {
+  .hero {
+    background-image: url(../img/service.jpg);
+    background-position: center 12%;
+  }
     .block {
       a:nth-child(1) .img {
         background-image: url(../img/service_1.jpg);
@@ -30,6 +34,11 @@
 .service_2 {
   .hero {
     background-image: url(../img/service_2.jpg);
+  }
+}
+.archive_blog {
+  .hero {
+    background-image: url(../img/blog.jpg);
   }
 }
 .hoiku {
