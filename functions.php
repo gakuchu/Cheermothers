@@ -39,6 +39,7 @@ function new_post_type() {
       'public' => true,// 管理画面に表示しサイト上にも表示する
       'hierarchicla' => false,//コンテンツを階層構造にするかどうか(投稿記事と同様に時系列に)
       'has_archive' => true,//trueにすると投稿した記事のアーカイブページを生成
+      'show_in_rest' => true,//Gutendurg有効化
       'supports' => array(//記事編集画面に表示する項目を配列で指定することができる
         'title',//タイトル
         'editor',//本文（の編集機能）
@@ -129,3 +130,27 @@ function remove_body_class($wp_classes)
   } 
   return $wp_classes;
 }
+
+// カスタム投稿タイプの記事編集画面にメタボックス（作成者変更）を表示する
+/* admin_menu アクションフックでカスタムボックスを定義 */
+add_action('admin_menu', 'myplugin_add_custom_box');
+/* 投稿ページの "advanced" 画面にカスタムセクションを追加 */
+function myplugin_add_custom_box() {
+  if( function_exists( 'add_meta_box' )) {
+    add_meta_box( 'myplugin_sectionid', __( '作成者', 'myplugin_textdomain' ), 'post_author_meta_box', 'blog', 'advanced' );
+  }
+}
+
+// カスタム投稿タイプの記事一覧に投稿者の項目を追加する
+function manage_books_columns ($columns) {
+  $columns['author'] = '作成者';
+  return $columns;
+}
+function add_books_column ($column, $post_id) {
+  if ('author' == $column) {
+    $value = get_the_term_list($post_id, 'author');
+    echo attribute_escape($value);
+  }
+}
+add_filter('manage_posts_columns', 'manage_books_columns');
+add_action('manage_posts_custom_column', 'add_books_column', 10, 2);

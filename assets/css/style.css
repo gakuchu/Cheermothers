@@ -122,6 +122,15 @@ main {
   background-image: url(../img/hero.jpg);
   background-size: cover;
   background-position: center; }
+  .hero::before {
+    background: inherit;
+    content: '';
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    position: absolute;
+    height: 220px;
+    width: 110%;
+    left: -5%; }
   .hero .fuki {
     width: 250px;
     height: 200px;
@@ -141,6 +150,9 @@ main {
     color: #444;
     text-shadow: 1px 1px 5px #bcbcbc;
     font-family: var(--font3); }
+
+.home .hero::before {
+  display: none; }
 
 @media screen and (max-width: 1250px) {
   .hero h1 {
@@ -441,16 +453,16 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em; }
-  .recruit article.contents .block .links a {
+  .recruit article.contents .block .links a, .recruit article.contents .block .links b {
     min-height: 300px;
     border: 1px solid #bcbcbc; }
-    .recruit article.contents .block .links a .img {
+    .recruit article.contents .block .links a .img, .recruit article.contents .block .links b .img {
       width: 100%;
       height: 150px; }
-      .recruit article.contents .block .links a .img img {
+      .recruit article.contents .block .links a .img img, .recruit article.contents .block .links b .img img {
         width: 100%;
         height: 100%; }
-    .recruit article.contents .block .links a .blog_content {
+    .recruit article.contents .block .links a .blog_content, .recruit article.contents .block .links b .blog_content {
       padding: 20px;
       text-align: left; }
 
@@ -505,12 +517,14 @@ footer {
   border: 2px solid var(--orange);
   text-align: left; }
   .archive_blog article b {
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: 700; }
   .archive_blog article .time {
     display: block;
     color: #aaa; }
   .archive_blog article p:nth-child(2) {
-    margin-top: 10px; }
+    margin-top: 10px;
+    opacity: .5; }
 
 .archive_blog .navigation {
   margin-top: 40px; }
@@ -575,6 +589,26 @@ footer {
       bottom: 20px; }
   .single_blog article .entry-content {
     margin-top: 50px; }
+    .single_blog article .entry-content p {
+      -webkit-margin-before: 1em;
+              margin-block-start: 1em;
+      -webkit-margin-after: 1em;
+              margin-block-end: 1em; }
+    .single_blog article .entry-content ul {
+      display: block;
+      list-style-type: disc;
+      -webkit-margin-before: 1em;
+              margin-block-start: 1em;
+      -webkit-margin-after: 1em;
+              margin-block-end: 1em;
+      -webkit-margin-start: 0px;
+              margin-inline-start: 0px;
+      -webkit-margin-end: 0px;
+              margin-inline-end: 0px;
+      -webkit-padding-start: 40px;
+              padding-inline-start: 40px; }
+      .single_blog article .entry-content ul li {
+        list-style: disc; }
 
 .single_blog nav {
   width: 60%;

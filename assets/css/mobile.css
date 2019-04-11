@@ -144,6 +144,8 @@
       background-image: url(../img/fuki_sp.png); }
     .home .hero .dark, .page .hero .dark, .single .hero .dark, .archive .hero .dark {
       height: 220px; }
+    .home .hero::before, .page .hero::before, .single .hero::before, .archive .hero::before {
+      display: none; }
   .home .service .block .block_detail {
     grid-template-columns: 90vw;
     grid-template-rows: 250px 250px;

@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px;
-  grid-column-gap: 30px;
+  grid-column-gap: 1em;
   a:hover {
     opacity: 1;
   }
@@ -52,8 +52,13 @@
     grid-template-rows: 170px;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-    a:hover {
-      opacity: 1;
+    a {
+      transition: all .5s ease;
+      &:hover {
+        opacity: 1;
+        box-shadow: 7px 7px 20px #ccc;
+        transition: all .5s ease;
+      }
     }
     .box {
       div {
@@ -62,7 +67,9 @@
       }
       .blog_img {
         width: 150px;
-        background-color: #f00;
+        background-image: url(../img/hero.jpg);
+        background-size: cover;
+        background-position: center;
       }
       .blog_content {
         width: calc(100% - 150px);
@@ -71,6 +78,7 @@
         padding: 10px;
         box-sizing: border-box;
         position: relative;
+        overflow: hidden;
         .time {
           color: dimgray;
           font-size: .7em;
@@ -84,20 +92,41 @@
           margin: 5px 0;
           font-size: .8em;
           color: dimgray;
+          height: 65px;
+          overflow-y: hidden;
+        }
+        .whiteshadow {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          width: 100%;
+          height: 30px;
+          padding-top: 20px;
+          text-align: center;
+          line-height: 30px;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--gray) 70%);
         }
         .read_more {
           position: absolute;
-          background-color: var(--orange);
-          right: -5px;
-          display: none;
-          height: 100%;
-          width: 5px;
-          font-family: var(--font2);
-          top: 0;
+          background-color: var(--gray);
+          left: 0;
+          bottom: 0px;
+          height: 5px;
+          width: 100%;
+          &::before {
+            content: '';
+            position: absolute;
+            background-color: var(--orange);
+            left: -100%;
+            bottom: 0px;
+            height: 5px;
+            width: 100%;
+            transition: all .5s ease-out;
+          }
         }
       }
-      &:hover .read_more {
-        display: block;
+      &:hover .read_more::before {
+        left: 0;
       } 
     }
     .blogzero {

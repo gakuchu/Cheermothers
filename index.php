@@ -42,16 +42,11 @@
           'post_type' => 'blog'    //投稿タイプの指定
           );
         $posts = get_posts( $args );
-        if( $posts ) : foreach( $posts as $post ) : setup_postdata( $post ); ?>
+        if( $posts ) : foreach( $posts as $post ) : setup_postdata( $post );
+        $loopcounter++;?>
         <a href="<?php the_permalink(); ?>">
           <div class="box">
-            <div class="blog_img img">
-              <?php 
-              if ( has_post_thumbnail() ) { // 投稿にアイキャッチ画像が割り当てられているかチェックします。
-                the_post_thumbnail();
-              } 
-              ?>
-            </div>
+            <div class="blog_img img-<?php echo $loopcounter; ?>"></div>
             <div class="blog_content">
               <time class="time"><?php echo get_the_date(); ?></time>
               <h3>
@@ -64,10 +59,19 @@
                 }
                 ?>
               </h3>
-              <?php the_excerpt(); ?><div class="read_more"></div>
+              <?php the_excerpt(); ?>
+              <div class="whiteshadow"></div>
+              <div class="read_more"></div>
             </div>
           </div>
         </a>
+        <?php if ( has_post_thumbnail() ) : ?>
+        <style>
+          .home .blog .block .block_detail .box .img-<?php echo $loopcounter; ?> {
+            background-image: url(<?php the_post_thumbnail_url(); ?>);
+          }
+        </style>
+        <?php endif; ?>
         <?php endforeach; ?>
         <?php else : ?>
         <p class="blogzero">現在サイトのメンテナンス中です。</p>

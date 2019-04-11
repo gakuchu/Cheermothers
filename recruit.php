@@ -77,7 +77,7 @@ Template Name: Recruit
         $query2->the_post();
         $loopcounter++;
         ?>
-        <a href="<?php the_permalink(); ?>">
+        <b>
           <div class="box">
             <div class="blog_img img img-<?php echo $loopcounter; ?>"></div>
             <div class="blog_content">　
@@ -85,7 +85,7 @@ Template Name: Recruit
               <div class="read_more"></div>
             </div>
           </div>
-        </a>
+        </b>
         <?php if ( has_post_thumbnail() ) : ?>
         <style>
           .img-<?php echo $loopcounter; ?> {

@@ -198,6 +198,9 @@
       .dark {
         height: 220px;
       }
+      &::before {
+        display: none;
+      }
     }
   }
   

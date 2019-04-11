@@ -17,7 +17,7 @@
     <meta content="website" property="og:type">
     <meta content="チアーマザーズ株式会社" property="og:description">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="http://taiyokenmazai.main.jp/">
+    <meta name="twitter:url" content="http://cheer-mothers.com/">
     <!--    <meta name="twitter:site" content="@cubicbezier">-->
     <!--    <meta name="twitter:creator" content="@cubicbezier">-->
     <link href="http://cheer-mothers.com/" rel="canonical">

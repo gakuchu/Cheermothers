@@ -3,9 +3,9 @@
 <main class="single_blog">
   <div class="hero">
     <div class="dark">BLOG</div>
-    <a href="tel:0363624429"><div class="fuki"></div></a> 
+    <a href="tel:0363624429"><div class="fuki"></div></a>
   </div>
-  <?php while( have_posts() ) : the_post(); ?>    
+  <?php while( have_posts() ) : the_post(); ?>
     <article>
       <div class="bloginfo">
         <h2><?php the_title(); ?></h2>
@@ -25,6 +25,11 @@
         next_post_link('%link', '次の記事 : %title');
       ?>
     </nav>
+  <?php if ( has_post_thumbnail() ) : ?>
+  <style>
+    .hero { background-image: url(<?php the_post_thumbnail_url(); ?>); }
+  </style>
+  <?php endif; ?> 
   <?php endwhile; ?>
 </main>
 

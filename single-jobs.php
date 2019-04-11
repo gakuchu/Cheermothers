@@ -23,7 +23,6 @@
     </div>
     <?php endwhile; ?>
   </article>
-  <?php get_template_part('template-part/recruit-form'); ?>
 
 </main>
 
